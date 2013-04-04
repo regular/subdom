@@ -8,7 +8,6 @@ goal: this kind of usage
   <div class="subdom" name="bar">
     <h1></h1>
   </div>
-
 </html>
 
 mySubDom = require("subdom")("foo");

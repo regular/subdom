@@ -1,0 +1,16 @@
+{
+  "name": "subdom",
+  "repo": "regular/subdom",
+  "description": "wraps dom and isolates a sub dom, sort of chroot. Useful for widgets.",
+  "version": "0.0.1",
+  "keywords": ["dom"],
+  "dependencies": {
+    "component/dom": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ],
+  "main": "index.js"
+}

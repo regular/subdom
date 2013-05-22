@@ -35,7 +35,7 @@ mySubDom(function(dom) {
     matchingElements = dom(".subdom[name=" + scope_name + "]");
     return function(iterator) {
       return matchingElements.each(function(el) {
-        return iterator(subdom(el));
+        return iterator(subdom(el), el);
       });
     };
   };

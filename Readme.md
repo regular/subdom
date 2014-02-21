@@ -1,4 +1,3 @@
-
 # subdom
 
   wraps component/dom to isolate a sub branch of the dom, sort of chroot. Useful for widgets
@@ -25,7 +24,8 @@ component/dom that will only access elements of the named subdom.
 
     mySubDom = require("subdom")("foo");
 
-    mySubDom(function(dom) {
+    mySubDom(function(dom, el) {
+      // el is the non component/dom wrapped subdom element
       dom("h1").html("Foo title"); // only changes h1 in scope 'foo'
     });
    
